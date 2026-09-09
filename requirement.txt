@@ -1,0 +1,5 @@
+pympdf
+sentence_transformers
+scikit-learn
+numpy
+groq
