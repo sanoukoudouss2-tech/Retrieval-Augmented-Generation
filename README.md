@@ -31,39 +31,6 @@ mon_env/
 └── le_petit_prince.pdf      # Document exemple utilisé pour les tests
 ```
 
-## Installation
-
-1. Cloner le dépôt :
-```bash
-git clone <url-du-repo>
-cd mon_env
-```
-
-2. Créer un environnement virtuel (recommandé) :
-```bash
-python -m venv mon_env
-source mon_env/bin/activate   # Sur Windows : mon_env\Scripts\activate
-```
-
-3. Installer les dépendances :
-```bash
-pip install -r requirements.txt
-```
-
-> **Note** : le notebook utilise également `python-dotenv` pour charger la clé API depuis le fichier `.env`. Pensez à l'ajouter si elle n'est pas déjà installée :
-> ```bash
-> pip install python-dotenv
-> ```
-
-## Configuration
-
-Créer un fichier `.env` à la racine du projet contenant votre clé API Groq :
-
-```
-GROQ_API_KEY=votre_clé_api_ici
-```
-
-Vous pouvez obtenir une clé sur [console.groq.com](https://console.groq.com).
 
 ## Utilisation
 
@@ -137,6 +104,4 @@ print(response.choices[0].message.content)
 - Gérer plusieurs documents PDF simultanément
 - Ajouter un score de confiance ou une citation des sources dans la réponse
 
-## Licence
 
-Ce projet est libre d'utilisation à des fins d'apprentissage et d'expérimentation.
